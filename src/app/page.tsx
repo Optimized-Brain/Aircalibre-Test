@@ -88,7 +88,7 @@ export default function Home() {
             className="flex flex-col items-center w-full max-w-5xl"
           >
             <SpotlightText spotlightSize={150}>
-              <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[7rem] font-normal tracking-tighter leading-[0.9] text-white mt-12 mb-8 text-balance break-words max-w-full">
+              <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[7rem] font-normal tracking-tighter leading-[0.9] mt-12 mb-8 text-balance break-words max-w-full">
                 CLARITY <span className="text-muted-foreground">IN EVERY</span> BREATH.
               </h1>
             </SpotlightText>

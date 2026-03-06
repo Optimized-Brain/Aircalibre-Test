@@ -5,11 +5,15 @@ import { motion, useMotionValue, useSpring, useMotionTemplate } from 'framer-mot
 export function SpotlightText({
     children,
     className = '',
-    spotlightSize = 50 // Smaller default size
+    spotlightSize = 50, // Smaller default size
+    baseColorClass = "text-zinc-800",
+    spotlightColorClass = "text-white"
 }: {
     children: React.ReactNode,
     className?: string,
-    spotlightSize?: number
+    spotlightSize?: number,
+    baseColorClass?: string,
+    spotlightColorClass?: string
 }) {
     const ref = useRef<HTMLDivElement>(null);
     const [isHovered, setIsHovered] = useState(false);
@@ -40,13 +44,13 @@ export function SpotlightText({
             }}
         >
             {/* Base text (dimmed) */}
-            <div className="text-zinc-800 dark:text-zinc-800 transition-colors duration-500">
+            <div className={`${baseColorClass} transition-colors duration-500`}>
                 {children}
             </div>
 
             {/* Spotlight text (bright) */}
             <motion.div
-                className="absolute inset-0 pointer-events-none text-foreground"
+                className={`absolute inset-0 pointer-events-none ${spotlightColorClass}`}
                 style={{
                     maskImage,
                     WebkitMaskImage: maskImage,
