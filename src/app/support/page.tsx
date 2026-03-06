@@ -107,8 +107,8 @@ export default function SupportPage() {
           <div className="font-code text-xs font-bold tracking-widest text-muted-foreground mb-8 uppercase">
                 // System Operations / Support Network
           </div>
-          <SpotlightText spotlightSize={350}>
-            <h1 className="font-headline text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[7rem] 2xl:text-[9rem] font-normal tracking-tighter uppercase leading-[0.85] text-foreground mb-12 xl:whitespace-nowrap">
+          <SpotlightText spotlightSize={350} className="w-full">
+            <h1 className="font-headline text-[8.5vw] sm:text-[7vw] md:text-[6vw] lg:text-[5vw] xl:text-[5.5rem] 2xl:text-[7rem] font-normal tracking-tighter uppercase leading-[0.85] text-foreground mb-12 whitespace-nowrap w-full">
               Operations <span className="text-muted-foreground italic font-serif lowercase tracking-normal">and</span> Support.
             </h1>
           </SpotlightText>
